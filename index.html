@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form action="https://fom.in.ua/echo" method="POST" name="Registration">
+        <input type="text" name="e-mail" placeholder="E-mail">
+        <input type="password" name="Password" placeholder="Пароль">
+        <input type="password" name="confirm pass" placeholder="Подтвердите пароль">
+        <input type="submit" value="Зарегистрироваться">
+    </form> 
+    <h1>Autorization</h1>
+    <form action="https://fom.in.ua/echo" method="POST" name="Autorization">
+        <input type="text" name="e-mail" placeholder="E-mail">
+        <input type="password" name="Password" placeholder="Пароль">
+        <input id="save" type="checkbox" name="Save data" value="on">
+        <label for="save">Запомнить</label>
+        <input type="submit" value="Войти">
+    </form>
+    <h1>Search</h1>
+    <form action="https://fom.in.ua/echo" method="GET" name="search">
+        <p><b>Тип кузова</b></p>
+        <table>
+            <tr>
+                <td>
+                    <input id="universal" type="checkbox" name="kuzov" value="a1">
+                    <label for="universal">Универсал</label>
+                </td>
+                <td>
+                    <input id="crossover" type="checkbox" name="kuzov" value="a2">
+                    <label for="crossover">Кроссовер</label><Br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="sedan" type="checkbox" name="kuzov" value="a3">
+                    <label for="sedan">Седан</label>
+                </td>
+                <td>
+                    <input id="cabrio" type="checkbox" name="kuzov" value="a4">
+                    <label for="cabrio">Кабриолет</label><Br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="cupe" type="checkbox" name="kuzov" value="a5">
+                    <label for="cupe">Купе</label>
+                </td>
+                <td>
+                    <input id="hetchback" type="checkbox" name="kuzov" value="a6">
+                    <label for="hetchback">Хетчбек</label><br>
+                </td>
+            </tr> 
+        </table>
+        <p><select multiple name="marka">
+            <option disabled>Выберите марку</option>
+            <option value="1111">Audi</option>
+            <option value="2111">Chevrolet</option>
+            <option value="3111">Suzuki</option>
+            <option value="4111">Subaru</option>
+            <option value="5111">Toyota</option>
+            <option value="6111">Nissan</option>
+            <option value="7111">Tesla</option>
+            <option value="8111">BMW</option>
+            <option value="9111">Volvo</option>
+            <option value="0111">Opel</option>
+        </select></p>
+        <p><select multiple name="producer">
+            <option disabled>Страна производитель</option>
+            <option value="1">Германия</option>
+            <option value="2">Франция</option>
+            <option value="3">США</option>
+            <option value="4">Италия</option>
+            <option value="5">Швейцария</option>
+            <option value="6">Китай</option>
+            <option value="7">Корея</option>
+            <option value="8">Австрия</option>
+            <option value="9">Украина</option>
+            <option value="0">Грузия</option>
+        </select></p>
+        <p><b>Цена</b></p>
+        <input type="text" name="from" placeholder="От">
+        <input type="text" name="to" placeholder="До">
+        <select size="1" name="currency">
+            <option disabled>Выберите валюту</option>
+            <option value="dollar">$</option>
+            <option value="euro">€</option>
+            <option value="hrv">₴</option>
+            <option value="rub">₽</option>
+        </select>
+        <input id="torg" type="checkbox" name="torg" value="yes">
+        <label for="torg">Возможен торг</label>
+        <input id="exchangeforcar" type="checkbox" name="exchangeforcar" value="yes">
+        <label for="exchangeforcar">Возможен обмен на автомобиль</label>
+        <input id="exchangeforrealestate" type="checkbox" name="exchangeforrealestate" value="yes">
+        <label for="exchangeforrealestate">Возможен обмен на недвижимость</label>
+        <p><b>Год выпуска</b></p>
+        <p><select size="2" name="year_from">
+            <option disabled>От</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2010">2010</option>
+            <option value="2005">2005</option>
+            <option value="2000">2000</option>
+            <option value="1995">1995</option>
+        </select>
+            <select size="2" name="year_to">
+            <option disabled>До</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2010">2010</option>
+            <option value="2005">2005</option>
+            <option value="2000">2000</option>
+            <option value="1995">1995</option>
+        </select></p>
+        <p><b>Cостояние</b></p>
+        <table>
+            <tr>
+                <td>
+                    <input id="broken" type="checkbox" name="broken" value="br">
+                    <label for="broken">Битая</label>
+                </td>
+                <td>
+                    <input id="used" type="checkbox" name="used" value="us">
+                    <label for="used">Б/у</label><Br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="new" type="checkbox" name="new" value="new">
+                    <label for="new">Новая</label>
+                </td>
+                <td>
+                    <input id="nocustoms" type="checkbox" name="nocustoms" value="on">
+                    <label for="nocustoms">Не растаможена</label>
+                </td>
+            </tr>
+        </table>
+        <p><b>Тип топлива</b></p>
+        <table>
+            <tr>
+                <td>
+                    <input id="gas" type="checkbox" name="gas" value="gas">
+                    <label for="gas">Газ</label>
+                </td>
+                <td>
+                    <input id="patrol" type="checkbox" name="patrol" value="patrol">
+                    <label for="patrol">Бензин</label><Br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="hybrid" type="checkbox" name="hybrid" value="hybrid">
+                    <label for="hybrid">Гибрид</label>
+                </td>
+            </tr>
+        </table>
+        <p><b>Тип КПП</b></p>
+        <input id="auto" type="radio" name="kpp" value="avtomat">
+        <label for="auto">Автомат</label><br>
+        <input type="radio" id="mechanics" name="kpp" value="mechanics">
+        <label for="mechanics">Механика</label><br>
+        <input type="radio" id="robot" name="kpp" value="robot">
+        <label for="robot">Робот</label><br>
+        <input type="radio" id="variator" name="kpp" value="variator">
+        <label for="variator">Вариатор</label><br>
+        <p><b>Цвет</b></p>
+        <p><select multiple size="4" name="color">
+            <option value="red">Красный</option>
+            <option value="black">Черный</option>
+            <option value="white">Белый</option>
+            <option value="blue">Синий</option>
+            <option value="yellow">Желтый</option>
+            <option value="green">Зеленый</option>
+            <option value="other">Другой</option>
+        </select>
+        <p><b>Комфорт</b></p>
+        <input id="sunroof" type="checkbox" name="sunroof" value="on">
+        <label for="sunroof">Люк</label>
+               
+        <input id="leather" type="checkbox" name="leather" value="on">
+        <label for="leather">Кожа</label><Br>
+               
+        <input id="conditioner" type="checkbox" name="conditioner" value="on">
+        <label for="conditioner">Кондиционер</label>
+            
+
+        <p><input type="submit" value="Найти"></p>
+        <p><input type="reset" value="Cбросить"></p>
+    </form>
+</body>
+</html>
